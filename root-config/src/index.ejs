@@ -45,7 +45,12 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@eos/root-config": "//localhost:9000/eos-root-config.js"
+        "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.development.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.development.js",
+        "@eos/root-config": "http://localhost:9000/eos-root-config.js",
+        "@eos/nav": "http://localhost:9001/eos-nav.js",
+        "@eos/task-list": "http://localhost:9002/eos-task-list.js",
+        "@eos/create-task": "http://localhost:9003/eos-create-task.js"
       }
     }
   </script>

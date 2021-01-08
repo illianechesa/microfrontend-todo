@@ -1,7 +1,7 @@
 {
   "name": "@eos/root-config",
   "scripts": {
-    "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true --env.standalone",
     "lint": "eslint src --ext js",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write \"./**\"",
