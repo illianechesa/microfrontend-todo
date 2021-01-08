@@ -71,9 +71,18 @@
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.0/dist/system.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.0/dist/extras/amd.min.js"></script>
   <% } %>
+  <style>
+    body, html { margin: 0; padding: 0; font-size: 16px; font-family: Arial, Helvetica, sans-serif; height: 100%; }
+    body { display: flex; flex-direction: column; }
+    * { box-sizing: border-box; }
+  </style>
 </head>
 <body>
-  <main></main>
+  <div id="nav-container"></div>
+  <main>
+    <div id="task-list-container"></div>
+    <div id="create-task-container"></div>
+  </main>
   <script>
     System.import('@eos/root-config');
   </script>
