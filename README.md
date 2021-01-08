@@ -2,6 +2,14 @@
 
 ## Todo application developed with React, using **single-spa** framework.
 
+### Install all dependencies in once
+
+Just need to run:
+
+```
+./install.sh
+```
+
 ### How to execute correctly
 
 Access root-config folder and run (by default it will run on port 9000):
