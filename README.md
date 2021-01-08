@@ -10,6 +10,14 @@ Just need to run:
 ./install.sh
 ```
 
+### Only if you have X-TERM
+
+If you have X-Term you can run all the micro applications by once and the browser will pop-up the application
+
+```
+./run.sh
+```
+
 ### How to execute correctly
 
 Access root-config folder and run (by default it will run on port 9000):
