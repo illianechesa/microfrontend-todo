@@ -1,15 +1,18 @@
 import React from "react";
+import { BrowserRouter, Link } from "react-router-dom";
 import "./root.component.css";
 
 export default function Root() {
   return (
-    <nav className="nav">
-      <a href="/task-list" className="link">
-        Task List
-      </a>
-      <a href="/create-task" className="link">
-        Create Task
-      </a>
-    </nav>
+    <BrowserRouter>
+      <nav className="nav">
+        <Link to="/task-list" className="link">
+          Task list
+        </Link>
+        <Link to="/create-task" className="link">
+          Create task
+        </Link>
+      </nav>
+    </BrowserRouter>
   );
 }
