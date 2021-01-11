@@ -10,7 +10,7 @@ export function nav() {
 }
 
 export function taskList(location) {
-  return prefix(location, "task-list");
+  return true;
 }
 
 export function createTask(location) {

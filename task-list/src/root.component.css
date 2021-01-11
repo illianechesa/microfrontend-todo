@@ -1,10 +1,12 @@
 .container1 {
-  background: #1098f7;
-  color: white;
+  background: #eeeeee;
+  color: black;
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex: 1;
-  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
 }

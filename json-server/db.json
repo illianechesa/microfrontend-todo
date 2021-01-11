@@ -2,32 +2,37 @@
   "tasks": [
     {
       "id": "0",
-      "name": "Go to the store",
+      "title": "Go to the store",
       "description": "Need to buy some milk, bread, and chococate",
+      "markComplete": false,
       "date": "2021-01-11T18:25:43.511Z"
     },
     {
       "id": "1",
-      "name": "Gym session",
+      "title": "Gym session",
       "description": "Chest",
+      "markComplete": false,
       "date": "2021-01-12T18:25:43.511Z"
     },
     {
       "id": "2",
-      "name": "Submit assignment",
+      "title": "Submit assignment",
       "description": "Submit maths integrals assignment",
+      "markComplete": false,
       "date": "2021-01-13T18:25:43.511Z"
     },
     {
       "id": "3",
-      "name": "Learn music score",
+      "title": "Learn music score",
       "description": "Practice and memorize music score",
+      "markComplete": false,
       "date": "2021-01-14T18:25:43.511Z"
     },
     {
       "id": "4",
-      "name": "Meeting with school friends",
+      "title": "Meeting with school friends",
       "description": "Meeting in the restaturan with old friends from school",
+      "markComplete": true,
       "date": "2021-01-15T18:25:43.511Z"
     }
   ]
