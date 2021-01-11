@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": "0",
+      "name": "Go to the store",
+      "description": "Need to buy some milk, bread, and chococate",
+      "date": "2021-01-11T18:25:43.511Z"
+    },
+    {
+      "id": "1",
+      "name": "Gym session",
+      "description": "Chest",
+      "date": "2021-01-12T18:25:43.511Z"
+    },
+    {
+      "id": "2",
+      "name": "Submit assignment",
+      "description": "Submit maths integrals assignment",
+      "date": "2021-01-13T18:25:43.511Z"
+    },
+    {
+      "id": "3",
+      "name": "Learn music score",
+      "description": "Practice and memorize music score",
+      "date": "2021-01-14T18:25:43.511Z"
+    },
+    {
+      "id": "4",
+      "name": "Meeting with school friends",
+      "description": "Meeting in the restaturan with old friends from school",
+      "date": "2021-01-15T18:25:43.511Z"
+    }
+  ]
+}
