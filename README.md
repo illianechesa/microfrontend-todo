@@ -10,9 +10,9 @@ Just need to run:
 ./install.sh
 ```
 
-### Only if you have X-TERM
+### Automatic Execution
 
-If you have X-Term you can run all the micro applications by once and the browser will pop-up the application
+You can run all the micro applications by once and the browser will pop-up the application
 
 ```
 ./run.sh
