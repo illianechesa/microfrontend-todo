@@ -20,6 +20,13 @@ You can run all the micro applications by once and the browser will pop-up the a
 
 ### How to execute correctly
 
+Firstly run the json-server. Access json-server folder and run(by default it will run on port 3000):
+
+```
+json-server --watch db.json
+
+```
+
 Access root-config folder and run (by default it will run on port 9000):
 
 ```
