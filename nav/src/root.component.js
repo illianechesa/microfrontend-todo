@@ -12,6 +12,9 @@ export default function Root() {
         <Link to="/create-task" className="link">
           Create task
         </Link>
+        <Link to="/task-detail" className="link">
+          Detail task
+        </Link>
         <h2>Todo Application</h2>
       </nav>
     </BrowserRouter>

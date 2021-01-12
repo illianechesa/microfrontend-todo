@@ -1,0 +1,13 @@
+.container3 {
+  background: #eeeeee;
+  color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 23%;
+}
+
+p {
+  font-size: 1rem;
+}
