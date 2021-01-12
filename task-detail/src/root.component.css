@@ -1,11 +1,12 @@
 .container3 {
-  background: #eeeeee;
-  color: black;
+  background: #572364;
+  color: white;
   padding: 20px;
   display: flex;
   align-items: center;
   flex: 1;
-  width: 23%;
+  width: 77%;
+  float: left;
 }
 
 p {

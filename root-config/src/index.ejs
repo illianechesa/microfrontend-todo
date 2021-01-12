@@ -76,6 +76,9 @@
     body, html { margin: 0; padding: 0; font-size: 16px; font-family: Arial, Helvetica, sans-serif; height: 100%; }
     body { display: flex; flex-direction: column; }
     * { box-sizing: border-box; }
+    .clearfix{
+    clear:both
+    }
   </style>
 </head>
 <body>
@@ -83,6 +86,7 @@
   <main>
     <div id="task-list-container"></div>
     <div id="task-detail-container"></div>
+    <div class="clearfix"></div>
     <div id="create-task-container"></div>
   </main>
   <script>
