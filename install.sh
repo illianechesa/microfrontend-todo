@@ -7,3 +7,5 @@ cd task-list && yarn install
 cd .. 
 cd create-task && yarn install
 cd ..
+cd task-detail && yarn install
+cd ..

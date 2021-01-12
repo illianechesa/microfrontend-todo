@@ -19,4 +19,11 @@ registerApplication(
   { domElement: document.getElementById("create-task-container") }
 );
 
+registerApplication(
+  "@eos/task-detail",
+  () => System.import("@eos/task-detail"),
+  isActive.taskDetail,
+  { domElement: document.getElementById("task-detail-container") }
+);
+
 start();
