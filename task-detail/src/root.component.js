@@ -14,7 +14,11 @@ class Root extends Component {
   }
 
   render() {
-    return <div className="container3">This is the detail</div>;
+    return (
+      <div className="container3">
+        Here will be placed the detail of the task
+      </div>
+    );
   }
 }
 
