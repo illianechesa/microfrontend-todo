@@ -16,3 +16,7 @@ export function taskList(location) {
 export function createTask(location) {
   return prefix(location, "create-task");
 }
+
+export function taskDetail(location) {
+  return prefix(location, "task-detail");
+}
