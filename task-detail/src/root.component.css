@@ -9,6 +9,10 @@
   float: left;
 }
 
+.taskDetail {
+  margin-left: 2%;
+}
+
 p {
   font-size: 1rem;
 }

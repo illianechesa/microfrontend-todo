@@ -18,5 +18,5 @@ export function createTask(location) {
 }
 
 export function taskDetail(location) {
-  return prefix(location, "task-detail");
+  return true;
 }

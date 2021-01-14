@@ -16,7 +16,12 @@ export class TodoItem extends Component {
   render() {
     const { id, title, completed } = this.props.todo;
     return (
-      <div style={this.getStyle()}>
+      <div
+        role="button"
+        tabIndex={-1}
+        style={this.getStyle()}
+        onClick={() => window.showDetail(id)}
+      >
         <p>
           <input
             type="checkbox"
