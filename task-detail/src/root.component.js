@@ -17,7 +17,6 @@ class Root extends Component {
   }
 
   render() {
-    console.log(this.state.task.completed);
     return (
       <div className="container3">
         <h3>Task Details</h3>
