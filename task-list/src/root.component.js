@@ -19,12 +19,12 @@ class Root extends Component {
     this.setState({
       todos: this.state.todos.map((todo) => {
         if (todo.id === id) {
-          todo.markComplete = !todo.markComplete;
+          todo.completed = !todo.completed;
           axios.put(`http://localhost:3000/tasks/${id}`, {
             id: todo.id,
             title: todo.title,
             description: todo.description,
-            markComplete: !todo.markComplete,
+            completed: todo.completed,
             date: todo.date,
           });
         }
