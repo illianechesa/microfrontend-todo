@@ -51,4 +51,10 @@ Access create-task folder and run:
 yarn start --port 9003
 ```
 
+Access task-detail folder and run:
+
+```
+yarn start --port 9004
+```
+
 Now you can access the entire application opening http://localhost:9000
