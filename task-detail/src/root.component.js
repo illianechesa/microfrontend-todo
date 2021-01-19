@@ -8,15 +8,12 @@ class Root extends Component {
     task: {},
   };
 
-  componentDidMount() {
+  render() {
     window.showDetail = (id) => {
       axios
         .get(`http://localhost:3000/tasks/${id}`)
         .then((res) => this.setState({ task: res.data }));
     };
-  }
-
-  render() {
     return (
       <div className="container3">
         <h3>Task Details</h3>

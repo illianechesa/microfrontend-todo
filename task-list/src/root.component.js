@@ -28,6 +28,7 @@ class Root extends Component {
             date: todo.date,
           });
         }
+        window.showDetail(id);
         return todo;
       }),
     });
