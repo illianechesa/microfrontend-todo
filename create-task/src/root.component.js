@@ -1,10 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import "./root.component.css";
+import Form from "./components/Form";
+class Root extends Component {
+  state = {
+    task: {},
+  };
 
-export default function Root() {
-  return (
-    <div className="container2">
-      <p>Create task</p>
-    </div>
-  );
+  render() {
+    return (
+      <div className="container2">
+        <React.Fragment>
+          <Form />
+        </React.Fragment>
+      </div>
+    );
+  }
 }
+
+export default Root;
