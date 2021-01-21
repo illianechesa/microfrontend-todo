@@ -32,10 +32,12 @@ export class Form extends Component {
     if (this.state.title && this.state.description && this.state.date) {
       window.dispatchEvent(
         new CustomEvent("addTask", {
-          task: {
-            title: this.state.title,
-            description: this.state.description,
-            date: this.state.date,
+          detail: {
+            task: {
+              title: this.state.title,
+              description: this.state.description,
+              date: this.state.date,
+            },
           },
         })
       );

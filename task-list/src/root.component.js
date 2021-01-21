@@ -44,6 +44,10 @@ class Root extends Component {
   };
 
   render() {
+    window.addEventListener("addTask", (e) => {
+      const task = e.detail.task;
+      console.log(task.title);
+    });
     return (
       <div className="container1">
         <div className="taskList">
