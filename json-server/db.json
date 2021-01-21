@@ -25,14 +25,14 @@
       "id": "3",
       "title": "Learn music score",
       "description": "Practice and memorize music score",
-      "completed": true,
+      "completed": false,
       "date": "2021-01-14T18:25:43.511Z"
     },
     {
       "id": "4",
       "title": "Meeting with school friends",
       "description": "Meeting in the restaturan with old friends from school",
-      "completed": true,
+      "completed": false,
       "date": "2021-01-15T18:25:43.511Z"
     }
   ]
