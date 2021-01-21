@@ -30,7 +30,15 @@ export class Form extends Component {
 
   handleSubmit(event) {
     if (this.state.title && this.state.description && this.state.date) {
-      alert("All data is correct");
+      window.dispatchEvent(
+        new CustomEvent("addTask", {
+          task: {
+            title: this.state.title,
+            description: this.state.description,
+            date: this.state.date,
+          },
+        })
+      );
     } else {
       alert("Please fulfil all the data");
     }
