@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Form.css";
+import axios from "axios";
+import { v4 as uuidv4 } from "uuid";
 export class Form extends Component {
   constructor(props) {
     super(props);
@@ -30,17 +32,15 @@ export class Form extends Component {
 
   handleSubmit(event) {
     if (this.state.title && this.state.description && this.state.date) {
-      window.dispatchEvent(
-        new CustomEvent("addTask", {
-          detail: {
-            task: {
-              title: this.state.title,
-              description: this.state.description,
-              date: this.state.date,
-            },
-          },
-        })
-      );
+      axios.post("http://localhost:3000/tasks/", {
+        id: uuidv4(),
+        title: this.state.title,
+        description: this.state.description,
+        completed: false,
+        date: new Date(this.state.date),
+      });
+      window.dispatchEvent(new CustomEvent("addTask", {}));
+      alert("Task created successfully");
     } else {
       alert("Please fulfil all the data");
     }

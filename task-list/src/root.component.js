@@ -44,9 +44,10 @@ class Root extends Component {
   };
 
   render() {
-    window.addEventListener("addTask", (e) => {
-      const task = e.detail.task;
-      console.log(task.title);
+    window.addEventListener("addTask", () => {
+      axios
+        .get("http://localhost:3000/tasks")
+        .then((res) => this.setState({ todos: res.data }));
     });
     return (
       <div className="container1">
