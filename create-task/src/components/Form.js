@@ -52,9 +52,10 @@ export class Form extends Component {
       <div className="container">
         <form onSubmit={this.handleSubmit}>
           <p>
-            Name:{" "}
+            Name (Max. 25 characters):{" "}
             <input
               type="text"
+              maxlength="25"
               value={this.state.title}
               onChange={this.handleChangeName}
             />

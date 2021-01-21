@@ -2,13 +2,13 @@
   background: #eeeeee;
   color: black;
   padding: 20px;
-  display: flex;
+  display: inline;
   align-items: center;
-  flex: 1;
   width: 23%;
   float: left;
 }
 
 p {
   font-size: 1rem;
+  width: 100%;
 }
