@@ -15,7 +15,7 @@
       "id": "1"
     },
     {
-      "title": "Submit assignment  23",
+      "title": "Submit assignment ",
       "description": "Submit maths integrals assignment 23",
       "completed": false,
       "date": "2021-01-13T00:00:00.000Z",
@@ -27,13 +27,6 @@
       "description": "Practice and memorize music score",
       "completed": false,
       "date": "2021-01-14T18:25:43.511Z"
-    },
-    {
-      "id": "a5ab1f65-84b2-4391-a392-734a33c6f0b9",
-      "title": "Tarea 3",
-      "description": "esto es la tarea 3",
-      "completed": false,
-      "date": "1111-12-12T00:00:00.000Z"
     }
   ]
 }

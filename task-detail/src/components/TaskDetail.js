@@ -11,19 +11,24 @@ export class TaskDetail extends Component {
     const { id, title, description, date, completed } = this.props.task;
     const humanDate = new Date(date);
     const completeMessage = completed ? "Yes" : "No";
-    return (
-      <BrowserRouter>
-        <div>
-          <p>Title: {title}</p>
-          <p>Description: {description}</p>
-          <p>Is completed: {completeMessage}</p>
-          <p>Due Date: {humanDate.toDateString()}</p>
-          <Link to="/create-task" className="link">
-            <button onClick={this.handleEdit.bind(this, id)}>Edit</button>
-          </Link>
-        </div>
-      </BrowserRouter>
-    );
+    console.log(id);
+    if (id !== undefined) {
+      console.log("dentro");
+      return (
+        <BrowserRouter>
+          <div>
+            <p>Title: {title}</p>
+            <p>Description: {description}</p>
+            <p>Is completed: {completeMessage}</p>
+            <p>Due Date: {humanDate.toDateString()}</p>
+            <Link to="/create-task" className="link">
+              <button onClick={this.handleEdit.bind(this, id)}>Edit</button>
+            </Link>
+          </div>
+        </BrowserRouter>
+      );
+    }
+    return <div></div>;
   }
 }
 
