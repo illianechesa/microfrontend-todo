@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter, Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export class TaskDetail extends Component {
@@ -11,13 +12,17 @@ export class TaskDetail extends Component {
     const humanDate = new Date(date);
     const completeMessage = completed ? "Yes" : "No";
     return (
-      <div>
-        <p>Title: {title}</p>
-        <p>Description: {description}</p>
-        <p>Is completed: {completeMessage}</p>
-        <p>Due Date: {humanDate.toDateString()}</p>
-        <button onClick={this.handleEdit.bind(this, id)}>Edit</button>
-      </div>
+      <BrowserRouter>
+        <div>
+          <p>Title: {title}</p>
+          <p>Description: {description}</p>
+          <p>Is completed: {completeMessage}</p>
+          <p>Due Date: {humanDate.toDateString()}</p>
+          <Link to="/create-task" className="link">
+            <button onClick={this.handleEdit.bind(this, id)}>Edit</button>
+          </Link>
+        </div>
+      </BrowserRouter>
     );
   }
 }

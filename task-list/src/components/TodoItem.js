@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { BrowserRouter, Link } from "react-router-dom";
 
 export class TodoItem extends Component {
   getStyle = () => {
@@ -16,24 +17,31 @@ export class TodoItem extends Component {
   render() {
     const { id, title, completed } = this.props.todo;
     return (
-      <div
-        role="button"
-        tabIndex={-1}
-        style={this.getStyle()}
-        onClick={() => window.showDetail(id)}
-      >
-        <p>
-          <input
-            type="checkbox"
-            defaultChecked={completed}
-            onChange={this.props.markComplete.bind(this, id)}
-          />{" "}
-          {title}
-          <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>
-            x
-          </button>
-        </p>
-      </div>
+      <BrowserRouter>
+        <Link to="/task-detail" style={{ textDecoration: "none" }}>
+          <div
+            role="button"
+            tabIndex={-1}
+            style={this.getStyle()}
+            onClick={() => window.showDetail(id)}
+          >
+            <p>
+              <input
+                type="checkbox"
+                defaultChecked={completed}
+                onChange={this.props.markComplete.bind(this, id)}
+              />{" "}
+              {title}
+              <button
+                onClick={this.props.delTodo.bind(this, id)}
+                style={btnStyle}
+              >
+                x
+              </button>
+            </p>
+          </div>
+        </Link>
+      </BrowserRouter>
     );
   }
 }
