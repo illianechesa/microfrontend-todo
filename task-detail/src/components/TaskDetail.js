@@ -11,9 +11,7 @@ export class TaskDetail extends Component {
     const { id, title, description, date, completed } = this.props.task;
     const humanDate = new Date(date);
     const completeMessage = completed ? "Yes" : "No";
-    console.log(id);
     if (id !== undefined) {
-      console.log("dentro");
       return (
         <BrowserRouter>
           <div>
