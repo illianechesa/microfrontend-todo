@@ -6,8 +6,10 @@ export class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: "",
       title: "",
       description: "",
+      completed: "",
       date: "",
     };
 
@@ -36,7 +38,12 @@ export class Form extends Component {
   };
 
   handleSubmit(event) {
-    if (this.state.title && this.state.description && this.state.date) {
+    if (
+      !this.state.id &&
+      this.state.title &&
+      this.state.description &&
+      this.state.date
+    ) {
       axios.post("http://localhost:3000/tasks/", {
         id: uuidv4(),
         title: this.state.title,
@@ -46,6 +53,20 @@ export class Form extends Component {
       });
       window.dispatchEvent(new CustomEvent("addTask", {}));
       alert("Task created successfully");
+    } else if (
+      this.state.id &&
+      this.state.title &&
+      this.state.description &&
+      this.state.date
+    ) {
+      axios.put(`http://localhost:3000/tasks/${this.state.id}`, {
+        title: this.state.title,
+        description: this.state.description,
+        completed: this.state.completed,
+        date: new Date(this.state.date),
+      });
+      window.dispatchEvent(new CustomEvent("editedTask", {}));
+      alert("Task edited successfully");
     } else {
       alert("Please fulfil all the data");
     }
@@ -57,8 +78,10 @@ export class Form extends Component {
       const id = e.detail;
       axios.get(`http://localhost:3000/tasks/${id}`).then((res) =>
         this.setState({
+          id: res.data.id,
           title: res.data.title,
           description: res.data.description,
+          completed: res.data.completed,
           date: new Date(res.data.date).toISOString().slice(0, 10),
         })
       );

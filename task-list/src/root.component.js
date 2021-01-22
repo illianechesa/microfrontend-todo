@@ -49,6 +49,11 @@ class Root extends Component {
         .get("http://localhost:3000/tasks")
         .then((res) => this.setState({ todos: res.data }));
     });
+    window.addEventListener("editedTask", () => {
+      axios
+        .get("http://localhost:3000/tasks")
+        .then((res) => this.setState({ todos: res.data }));
+    });
     return (
       <div className="container1">
         <div className="taskList">
