@@ -3,7 +3,8 @@
   clear: both;
 }
 
-.container input {
+.container input,
+.container button {
   width: 100%;
   clear: both;
 }

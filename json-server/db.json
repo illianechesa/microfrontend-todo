@@ -18,43 +18,15 @@
       "id": "2",
       "title": "Submit assignment",
       "description": "Submit maths integrals assignment",
-      "completed": true,
+      "completed": false,
       "date": "2021-01-13T18:25:43.511Z"
     },
     {
       "id": "3",
       "title": "Learn music score",
       "description": "Practice and memorize music score",
-      "completed": true,
+      "completed": false,
       "date": "2021-01-14T18:25:43.511Z"
-    },
-    {
-      "id": "4",
-      "title": "Meeting with school friends",
-      "description": "Meeting in the restaturan with old friends from school",
-      "completed": false,
-      "date": "2021-01-15T18:25:43.511Z"
-    },
-    {
-      "id": "7c8694c5-9cb9-4f39-b32d-6097ea616352",
-      "title": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "description": "sssssssssssssss",
-      "completed": false,
-      "date": "1111-12-12T00:00:00.000Z"
-    },
-    {
-      "id": "bcf155a4-0e0c-415d-8c1a-0c984f58ce21",
-      "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "description": "sssssssssssssss",
-      "completed": false,
-      "date": "1111-12-12T00:00:00.000Z"
-    },
-    {
-      "id": "d97e4090-8d4d-4063-b341-bf866ace9896",
-      "title": "AAAAAAAAAAAAAAAAAAAAAAAAA",
-      "description": "ASSSSSSSS",
-      "completed": false,
-      "date": "1111-12-12T00:00:00.000Z"
     }
   ]
 }

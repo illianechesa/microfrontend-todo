@@ -30,6 +30,11 @@ export class Form extends Component {
     this.setState({ date: event.target.value });
   }
 
+  reset = (event) => {
+    this.setState({ title: "", description: "", date: "" });
+    event.preventDefault();
+  };
+
   handleSubmit(event) {
     if (this.state.title && this.state.description && this.state.date) {
       axios.post("http://localhost:3000/tasks/", {
@@ -55,7 +60,7 @@ export class Form extends Component {
             Name (Max. 25 characters):{" "}
             <input
               type="text"
-              maxlength="25"
+              maxLength="25"
               value={this.state.title}
               onChange={this.handleChangeName}
             />
@@ -77,7 +82,7 @@ export class Form extends Component {
             />
           </p>
           <input type="submit" value="Add" />
-          <input type="reset" value="Reset"></input>
+          <button onClick={this.reset}>Reset</button>
         </form>
       </div>
     );
