@@ -53,6 +53,16 @@ export class Form extends Component {
   }
 
   render() {
+    window.addEventListener("editTask", (e) => {
+      const id = e.detail;
+      axios.get(`http://localhost:3000/tasks/${id}`).then((res) =>
+        this.setState({
+          title: res.data.title,
+          description: res.data.description,
+          date: new Date(res.data.date).toISOString().slice(0, 10),
+        })
+      );
+    });
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit}>
