@@ -14,6 +14,11 @@ class Root extends Component {
         .get(`http://localhost:3000/tasks/${id}`)
         .then((res) => this.setState({ task: res.data }));
     };
+    window.addEventListener("editedTask", () => {
+      axios
+        .get(`http://localhost:3000/tasks/${this.state.task.id}`)
+        .then((res) => this.setState({ task: res.data }));
+    });
     return (
       <div className="container3">
         <h3>Task Details</h3>

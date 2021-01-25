@@ -1,7 +1,7 @@
 {
   "tasks": [
     {
-      "title": "Go to the store ",
+      "title": "Go to the store",
       "description": "Need to buy some milk, bread, and chococate",
       "completed": true,
       "date": "2021-01-11T00:00:00.000Z",
@@ -15,7 +15,7 @@
       "id": "1"
     },
     {
-      "title": "Submit assignment ",
+      "title": "Submit assignment  123",
       "description": "Submit maths integrals assignment 23",
       "completed": false,
       "date": "2021-01-13T00:00:00.000Z",
