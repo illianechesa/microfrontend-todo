@@ -17,31 +17,24 @@ export class TodoItem extends Component {
   render() {
     const { id, title, completed } = this.props.todo;
     return (
-      <BrowserRouter>
-        <Link to="/task-detail" style={{ textDecoration: "none" }}>
-          <div
-            role="button"
-            tabIndex={-1}
-            style={this.getStyle()}
-            onClick={() => window.showDetail(id)}
-          >
-            <p>
-              <input
-                type="checkbox"
-                defaultChecked={completed}
-                onChange={this.props.markComplete.bind(this, id)}
-              />{" "}
-              {title}
-              <button
-                onClick={this.props.delTodo.bind(this, id)}
-                style={btnStyle}
-              >
-                x
-              </button>
-            </p>
-          </div>
-        </Link>
-      </BrowserRouter>
+      <div
+        role="button"
+        tabIndex={-1}
+        style={this.getStyle()}
+        onClick={() => window.showDetail(id)}
+      >
+        <p>
+          <input
+            type="checkbox"
+            defaultChecked={completed}
+            onChange={this.props.markComplete.bind(this, id)}
+          />{" "}
+          {title}
+          <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>
+            x
+          </button>
+        </p>
+      </div>
     );
   }
 }
