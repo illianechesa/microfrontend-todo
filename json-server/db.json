@@ -1,14 +1,14 @@
 {
   "tasks": [
     {
-      "title": "Go to the store 2",
+      "title": "Go to the store ",
       "description": "Need to buy some milk, bread, and chococate",
       "completed": true,
       "date": "2021-01-11T00:00:00.000Z",
       "id": "0"
     },
     {
-      "title": "Gym session 2",
+      "title": "Gym session ",
       "description": "Chest",
       "completed": true,
       "date": "2021-01-12T00:00:00.000Z",

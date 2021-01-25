@@ -20,3 +20,7 @@ export function createTask(location) {
 export function taskDetail(location) {
   return true;
 }
+
+export function stats(location) {
+  return prefix(location, "stats");
+}

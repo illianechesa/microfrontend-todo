@@ -5,4 +5,5 @@ gnome-terminal --title "Navigation" --execute bash -c "cd nav && yarn start --po
 gnome-terminal --title "Task List" --execute bash -c "cd task-list && yarn start --port 9002" 
 gnome-terminal --title "Create Task" --execute bash -c "cd create-task && yarn start --port 9003" 
 gnome-terminal --title "Task Detail" --execute bash -c "cd task-detail && yarn start --port 9004" 
+gnome-terminal --title "Stats" --execute bash -c "cd stats && ng serve --port 9005" 
 xdg-open http://localhost:9000

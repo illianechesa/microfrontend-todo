@@ -26,4 +26,8 @@ registerApplication(
   { domElement: document.getElementById("task-detail-container") }
 );
 
+registerApplication("stats", () => System.import("stats"), isActive.stats, {
+  domElement: document.getElementById("stats-container"),
+});
+
 start();
