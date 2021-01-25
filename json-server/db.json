@@ -1,22 +1,22 @@
 {
   "tasks": [
     {
-      "title": "Go to the store",
+      "id": "0",
+      "title": "Go to the store 2",
       "description": "Need to buy some milk, bread, and chococate",
       "completed": true,
-      "date": "2021-01-11T00:00:00.000Z",
-      "id": "0"
+      "date": "2021-01-11T00:00:00.000Z"
     },
     {
+      "id": "1",
       "title": "Gym session ",
       "description": "Chest",
-      "completed": true,
-      "date": "2021-01-12T00:00:00.000Z",
-      "id": "1"
+      "completed": false,
+      "date": "2021-01-12T00:00:00.000Z"
     },
     {
-      "title": "Submit assignment  123",
-      "description": "Submit maths integrals assignment 23",
+      "title": "Submit assignment  ",
+      "description": "Submit maths integrals assignment ",
       "completed": false,
       "date": "2021-01-13T00:00:00.000Z",
       "id": "2"
