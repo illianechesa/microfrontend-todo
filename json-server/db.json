@@ -1,32 +1,18 @@
 {
   "tasks": [
     {
-      "title": "Go to the store",
-      "description": "Need to buy some milk, bread, and chococate",
-      "completed": true,
-      "date": "2021-01-11T00:00:00.000Z",
-      "id": "0"
-    },
-    {
       "id": "1",
       "title": "Gym session ",
       "description": "Chest",
-      "completed": false,
+      "completed": true,
       "date": "2021-01-12T00:00:00.000Z"
     },
     {
-      "id": "2",
-      "title": "Submit assignment  ",
-      "description": "Submit maths integrals assignment ",
+      "title": "Thesis Masters Degree",
+      "description": "Description",
       "completed": false,
-      "date": "2021-01-13T00:00:00.000Z"
-    },
-    {
-      "id": "3",
-      "title": "Learn music score",
-      "description": "Practice and memorize music score",
-      "completed": false,
-      "date": "2021-01-14T18:25:43.511Z"
+      "date": "2021-07-17T00:00:00.000Z",
+      "id": "d59b52a7-bbbd-4fb2-a5e9-84447b6c4ea8"
     }
   ]
 }
